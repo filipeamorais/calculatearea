@@ -28,6 +28,18 @@ class Rectangle implements CalculableArea {
     }
 }
 
+class Circle implements CalculableArea {
+    private double radius;
+
+    public Circle (double radius){
+        this.radius = radius;
+    }
+
+    public double CalculateArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
 class Test{
     public static void main (String[] args){
         CalculableArea a = new Rectangle(3, 2);
